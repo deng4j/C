@@ -1,0 +1,5 @@
+﻿  t2.c
+D:\C\vs\demo2\t2.c(22,9): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“int”
+D:\C\vs\demo2\t2.c(22,9): warning C4313: “printf”: 格式字符串中的“%p”与“int”类型的参数 1 冲突
+D:\C\vs\demo2\t2.c(20,1): warning C4047: “初始化”:“int”与“int *”的间接级别不同
+  demo2.vcxproj -> D:\C\vs\demo2\x64\Debug\demo2.exe
