@@ -24,6 +24,7 @@ long long //更长的整型
 float //单精度浮点型
 
 double //双精度浮点型
+
 */
 
 /*
@@ -36,7 +37,7 @@ enum Day
 } day;
 
 
-int main_() {
+int main2() {
 
 	for (day = MON; day <= SUN; day++)
 	{
@@ -44,5 +45,6 @@ int main_() {
 	}
 
 	printf("MON: %d", THU);
+	return 0;
 }
 

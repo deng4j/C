@@ -142,6 +142,7 @@
     <ClCompile Include="run_app.c" />
     <ClCompile Include="t1.c" />
     <ClCompile Include="t2.c" />
+    <ClCompile Include="t3.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
