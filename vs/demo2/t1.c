@@ -9,25 +9,6 @@ C语言数组和java一样
 */
 
 /*
-数据类型:
-
-char //字符数据型
-
-short //短整型
-
-int //整型
-
-long //长整型
-
-long long //更长的整型
-
-float //单精度浮点型
-
-double //双精度浮点型
-
-*/
-
-/*
 枚举：在C 语言中，枚举类型是被当做 int 或者 unsigned int 类型来处理的
 */
 /*1、先定义枚举类型并定义枚举变量*/
@@ -37,7 +18,7 @@ enum Day
 } day;
 
 
-int main2() {
+int main1() {
 
 	for (day = MON; day <= SUN; day++)
 	{
