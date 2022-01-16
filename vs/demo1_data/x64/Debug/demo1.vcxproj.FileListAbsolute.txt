@@ -1,0 +1,2 @@
+D:\C\vs\demo1\x64\Debug\data_demo1.exe
+D:\C\vs\demo1_data\x64\Debug\demo1_data.exe

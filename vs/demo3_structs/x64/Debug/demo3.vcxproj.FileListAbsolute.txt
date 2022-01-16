@@ -1,0 +1,2 @@
+D:\C\vs\demo3\x64\Debug\structs_demo3.exe
+D:\C\vs\demo3_structs\x64\Debug\demo3_structs.exe
