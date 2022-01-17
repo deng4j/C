@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include<stdio.h>
 
 /*
@@ -33,8 +35,11 @@ int main() {
 	//测试位域结构体的大小
 	printf("位域结构体大小： %d\n", sizeof(books));
 	//测试超过位域大小后，得到的值
-	bin_simple(10);
-	printf("c的值： %d\n", books.d);
+	int bin_num;
+	printf("请输入10进制值：");
+	scanf("%d",&bin_num);
+	bin_simple(bin_num);
+	printf("d的值： %d\n", books.d);
 	//赋值
 	books.a = 5;
 	printf("a的值： %d\n", books.a);
