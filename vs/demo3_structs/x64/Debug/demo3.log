@@ -1,8 +1,8 @@
 ﻿E:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(demo3.vcxproj, structs_demo3.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
   run_app.c
-D:\C\vs\demo3_structs\run_app.c(99,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“double”
-D:\C\vs\demo3_structs\run_app.c(106,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“double”
-D:\C\vs\demo3_structs\run_app.c(119,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“double”
-D:\C\vs\demo3_structs\run_app.c(138,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-D:\C\vs\demo3_structs\run_app.c(138,9): message : 请考虑在格式字符串中使用“%zd”
+D:\C\vs\demo3_structs\run_app.c(103,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“double”
+D:\C\vs\demo3_structs\run_app.c(110,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“double”
+D:\C\vs\demo3_structs\run_app.c(130,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“double”
+D:\C\vs\demo3_structs\run_app.c(149,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\C\vs\demo3_structs\run_app.c(149,9): message : 请考虑在格式字符串中使用“%zd”
   demo3.vcxproj -> D:\C\vs\demo3_structs\x64\Debug\demo3_structs.exe
