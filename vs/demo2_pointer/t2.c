@@ -24,8 +24,9 @@ int **p;       // 声明一个指针 p ，该指针指向一个 int 类型的指针
 
 */
 void print(int* a_adr);
+void point2(int** p2);
 
-int main2() {
+int main() {
 	int var1 = 10;
 	int* p;
 	p = &var1;
@@ -36,11 +37,26 @@ int main2() {
 	int* pa;
 	pa = &a;
 	print(pa);
-	printf("指针以参数的方式传入并修改后: %d", a);
+	printf("指针以参数的方式传入并修改后: %d\n", a);
+	//----------高级操作-----------
+	int b = 20;
+	//指向b的地址
+	int* p1 = &b;
+	//指向指针p1的地址
+	int** p2 = &p1;
+	//---------二级指针作为参数,赋值操作------------
+	point2(&p1);
+
 	return 0;
 }
 
 
 void print(int* a_adr) {
 	*a_adr = 30;
+}
+
+void point2(int** p2) {
+	int a = 30;
+	*p2 = &a;
+	printf("存放在二级指针\n");
 }

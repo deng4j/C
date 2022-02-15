@@ -39,7 +39,7 @@ int subtract() {
 
 extern int g_val;
 
-int main() {
+int main0() {
 
     char a = 'a';
 

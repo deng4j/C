@@ -1,1 +1,2 @@
 D:\C\vs\demo2\x64\Debug\pointer_demo2.exe
+D:\C\vs\demo2_pointer\x64\Debug\demo2_pointer.exe
