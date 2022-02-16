@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ref.cpp" />
     <ClCompile Include="run_app.c" />
     <ClCompile Include="t1.c" />
     <ClCompile Include="t2.c" />

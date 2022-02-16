@@ -11,11 +11,22 @@ C语言数组和java一样
 /*
 枚举：在C 语言中，枚举类型是被当做 int 或者 unsigned int 类型来处理的
 */
-/*1、先定义枚举类型并定义枚举变量*/
+
+//一.定义Boolean值
+/* 方法1 */
+#define TRUE 1
+#define FALSE 0
+
+/* 方法2 */
+enum bool{ false, true };
+
+
+/*二、先定义枚举类型并定义枚举变量*/
 enum Day
 {
 	MON, TUE, WED, THU, FRI, SAT, SUN
 } day;
+
 
 
 int main1() {
