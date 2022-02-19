@@ -28,7 +28,7 @@ int **p;       // 声明一个指针 p ，该指针指向一个 int 类型的指针
 void print(int* a_adr);
 void point2(int** p2);
 
-int main() {
+int mainXXXXXXX() {
 	int var1 = 10;
 	int* p;
 	p = &var1;

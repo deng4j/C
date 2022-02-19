@@ -18,5 +18,8 @@
     <ClCompile Include="run_app.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="string.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

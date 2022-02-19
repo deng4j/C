@@ -14,4 +14,5 @@ int mainYGYU()
     int a = 4;
     swap(a);
     printf("主方法值：%d\n", a);
+    return 0;
 }
