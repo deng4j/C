@@ -15,10 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="run_app.c">
+    <ClCompile Include="d1.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="string.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d3.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

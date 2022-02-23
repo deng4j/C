@@ -8,7 +8,7 @@ typedef struct Node {
 	struct Node* next;
 }node,*linked;
 
-int main() {
+int mainXXXXXX() {
 	linked link = (linked)malloc(sizeof(node));
 	if (link->next)  
 	{

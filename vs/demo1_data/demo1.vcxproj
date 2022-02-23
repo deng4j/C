@@ -140,7 +140,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="run_app.c" />
+    <ClCompile Include="d2.c" />
+    <ClCompile Include="d1.c" />
+    <ClCompile Include="d3.c" />
     <ClCompile Include="string.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

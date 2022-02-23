@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int g_val=101;
+int g_val = 101;
 
 /*
 C语言中的运算方式、条件判断语句、循环和java一样
