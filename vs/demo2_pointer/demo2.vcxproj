@@ -141,9 +141,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ref.cpp" />
-    <ClCompile Include="t1.c" />
+    <ClCompile Include="p1.c" />
     <ClCompile Include="p2.c" />
-    <ClCompile Include="p3.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
