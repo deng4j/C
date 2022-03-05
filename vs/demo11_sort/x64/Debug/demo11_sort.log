@@ -1,7 +1,0 @@
-﻿  run_app.c
-D:\C\vs\demo11_sort\run_app.c(77,6): warning C4101: “i”: 未引用的局部变量
-D:\C\vs\demo11_sort\run_app.c(91,9): warning C4101: “j”: 未引用的局部变量
-D:\C\vs\demo11_sort\run_app.c(91,6): warning C4101: “i”: 未引用的局部变量
-D:\C\vs\demo11_sort\run_app.c(117,9): warning C4101: “j”: 未引用的局部变量
-D:\C\vs\demo11_sort\run_app.c(117,6): warning C4101: “i”: 未引用的局部变量
-  demo11_sort.vcxproj -> D:\C\vs\demo11_sort\x64\Debug\demo11_sort.exe

@@ -43,7 +43,7 @@ strlen£ºÇó×Ö·û´®³¤¶È
 */
 
 
-int main() {
+int mainXXX() {
 
 	char var = 'A';
 	short var1 = 100;

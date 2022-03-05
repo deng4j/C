@@ -48,6 +48,10 @@ int main0() {
     printf("subtract(): %d \n", subtract());
     printf("全局变量：%d", g_val);
     getchar();
+
+
     return 0;
 
 }
+
+
