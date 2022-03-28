@@ -21,5 +21,8 @@
     <ClCompile Include="while.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="getchar.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

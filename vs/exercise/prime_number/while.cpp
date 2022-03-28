@@ -17,4 +17,6 @@ int mainFGHJ() {
 		}
 	}
 	printf("%d\n",total);
+
+	return 0;
 }
