@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="conversion.cpp" />
     <ClCompile Include="getchar.c" />
     <ClCompile Include="prime.cpp" />
     <ClCompile Include="while.cpp" />
