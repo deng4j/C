@@ -144,6 +144,9 @@
     <ClCompile Include="prime.cpp" />
     <ClCompile Include="while.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="getchar.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
