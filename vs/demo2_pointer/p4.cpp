@@ -40,16 +40,16 @@ void mainHJK()
 
 
 //动态创建一维数组
-int mainFYGT()
+int mainUOIH()
 {
 
-    int n1, i;
+    int n1;
     int* array;
     printf("请输入所要创建的一维动态数组的长度：\n");
     scanf("%d", &n1);
     array = (int*)calloc(n1, sizeof(int));
 
-    for (i = 0; i < n1; i++)
+    for (int i = 0; i < n1; i++)
     {
         array[i] = i + 1;
         printf("%d\t", array[i]);
@@ -60,7 +60,7 @@ int mainFYGT()
 }
 
 //动态创建二维数组
-int main()
+int mainJIO()
 {
     int n1, n2;
     int** array, i, j;

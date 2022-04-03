@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<math.h>
-#include "getchar.h"
+#include<stdlib.h>
 
 
 /*
@@ -10,7 +10,7 @@ getchar()每次会去缓冲区去取一个字符
 scanf会将空间中换行符'\n'前的字符串全部取出，存入到地址中
 */
 
-int mainFGVH() {
+int mainGYUVY() {
 
 	int ch = 0;
 	int temp = 0;
@@ -210,18 +210,37 @@ int mainHUJJJI() {
 	return 0;
 }
 
-
-int main() {
-	int n=0;
-	printf("请输入数据个数:\n");
+//动态内存分配
+int mainHIU() {
+	int n;
+	float* array;
+	printf("请输入长度：\n");
 	scanf("%d", &n);
-	//int arr[n];
+	array = (float*)calloc(n, sizeof(float));
+
 	for (int i = 0; i < n; i++)
 	{
-
+		scanf("%f", &array[i]);
 	}
 
-	printf("%d", n);
+	float max = array[0], min = array[0],avr=0;
+
+	for (int i = 0; i < n; i++)
+	{
+		if (array[i]>max)
+		{
+			max = array[i];
+		}
+		if (array[i] < min)
+		{
+			min = array[i];
+		}
+		avr += array[i];
+	}
+	avr = avr / n;
+
+	printf("%.2f %.2f %.2f",max,min,avr);
+	//释放第一维指针 
+	free(array);
 	return 0;
 }
-

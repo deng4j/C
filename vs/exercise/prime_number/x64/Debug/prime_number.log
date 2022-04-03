@@ -4,6 +4,5 @@ D:\C\vs\exercise\prime_number\getchar.c(45,10): message : 占位符和其参数�
 D:\C\vs\exercise\prime_number\getchar.c(45,10): message : 缺失的可变参数 2 为格式字符串“%c”所需
 D:\C\vs\exercise\prime_number\getchar.c(45,10): message : 此参数用作缓冲区大小
 D:\C\vs\exercise\prime_number\getchar.c(207,34): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(218,11): error C2057: 应输入常量表达式
-D:\C\vs\exercise\prime_number\getchar.c(218,11): error C2466: 不能分配常量大小为 0 的数组
-D:\C\vs\exercise\prime_number\getchar.c(218,12): error C2133: “arr”: 未知的大小
+D:\C\vs\exercise\prime_number\getchar.c(80): warning C4716: “mainCFTVGBHJ”: 必须返回一个值
+  prime_number.vcxproj -> D:\C\vs\exercise\prime_number\x64\Debug\prime_number.exe
