@@ -244,3 +244,158 @@ int mainHIU() {
 	free(array);
 	return 0;
 }
+
+
+//求三角形面积
+int mainYJGU()
+{
+	float a, b, c;
+	printf("请输入:\n");
+	scanf("%f %f %f", &a, &b, &c);
+
+	//海伦公式:p=(a+b+c)/2，S=sqrt[p(p-a)(p-b)(p-c)]
+	float p = (a + b + c) / 2;
+	float S = sqrt(p*(p-a)*(p-b)*(p-c));
+
+
+	printf("circumference=%.2f area=%.2f", (a+ b+ c),(S));
+	
+
+	return 0;
+}
+
+
+int mainGUI()
+{
+	float h, m;
+	int n;
+	printf("请输入:\n");
+	scanf("%d %f %f", &n, &h, &m);
+
+	int residue = n - ceil(m / h);
+
+	printf("%d", residue);
+
+	return 0;
+}
+
+
+//小数点后四舍五入
+int mainDSDS() {
+	double n;
+	printf("请输入华氏温度:\n");
+	scanf("%lf", &n);
+
+	//摄氏温度
+	double c = 5.0 / 9.0*(n - 32);
+	printf("%.3lf", c);
+	return 0;
+}
+
+
+int mainUHUI() {
+	float r;
+	printf("请输入:\n");
+	scanf("%f", &r);
+	float  S =3.14*r*r;
+	printf("%.2f", S);
+	return 0;
+}
+
+int mainYUV()
+{
+	float r1, r2;
+	printf("请输入:\n");
+	scanf("%f %f", &r1, &r2);
+
+	double resistance = 1.0 / ((1.0/r1)+(1.0/r2));
+
+	printf("%.1lf", resistance);
+
+	return 0;
+}
+
+int mainYGYU()
+{
+	float h, r;
+	printf("请输入:\n");
+	scanf("%f %f", &h, &r);
+
+	double V = 3.14 * h * r * r;
+	int cups = ceil( 1000.0 * 10 / V);
+
+	printf("%d", cups);
+
+	return 0;
+}
+
+/*
+等差数列:
+an=am+(n-m)d，（n为正整数）
+*/
+int mainGTVUG()
+{
+	int a1, a2;
+	printf("请输入:\n");
+	scanf("%d %d", &a1, &a2);
+
+	int a3 = a1 + (3 - 1)*(a2 - a1);
+
+	printf("%d", a3);
+
+	return 0;
+}
+
+
+int mainBYG() {
+	float r;
+	printf("请输入:\n");
+	scanf("%f", &r);
+	float  V = 3.14 * r * r*r*4.0/3.0;
+	printf("%.2f", V);
+	return 0;
+}
+
+//设置闹钟
+int mainGYUu()
+{
+	int h, m, nowM;
+	printf("请输入:\n");
+	scanf("%d:%d %d", &h, &m,&nowM);
+
+	int allM = (nowM + h * 60 + m);
+	int useH = (nowM + h * 60 + m) / 60;
+	int pH = useH % 24;
+	int pM = (allM - useH*60) % 60;
+	printf("%02d:%02d", pH, pM);
+
+	return 0;
+}
+
+//BC43上下电梯
+int mainGUYF() {
+	int n;
+	printf("请输入排队人数:\n");
+	scanf("%d", &n);
+	
+	int time1 = (n / 12) * 4;
+	int times = time1 + ( ((n+1)- time1/4*12)==0?0:2 );
+
+	printf("%d", times);
+	return 0;
+}
+
+
+//最大公约数与最小公倍数
+int mainYGUF() {
+	long long a, b, m, n, c;
+	scanf("%lld %lld", &a, &b);
+	c = a * b;
+	while (a && b) {
+		if (a > b) a %= b;
+		else b %= a;
+	}
+	m = a > b ? a : b;
+	n = c / m;
+	printf("最小公倍数：%lld 最大公约数：%lld", n,m);
+}
