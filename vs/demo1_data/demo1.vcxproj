@@ -143,7 +143,9 @@
     <ClCompile Include="d2.c" />
     <ClCompile Include="d1.c" />
     <ClCompile Include="d3.c" />
+    <ClCompile Include="strcat.c" />
     <ClCompile Include="string.c" />
+    <ClCompile Include="strtok.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
