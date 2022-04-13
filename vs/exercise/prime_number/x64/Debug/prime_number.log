@@ -3,15 +3,12 @@ D:\C\vs\exercise\prime_number\getchar.c(45,10): warning C4473: “scanf_s”: �
 D:\C\vs\exercise\prime_number\getchar.c(45,10): message : 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
 D:\C\vs\exercise\prime_number\getchar.c(45,10): message : 缺失的可变参数 2 为格式字符串“%c”所需
 D:\C\vs\exercise\prime_number\getchar.c(45,10): message : 此参数用作缓冲区大小
-D:\C\vs\exercise\prime_number\getchar.c(207,34): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(258,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(275,18): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(300,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(325,17): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(354,31): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(405,9): warning C4477: “printf”: 格式字符串“%lld”需要类型“__int64”的参数，但可变参数 1 拥有了类型“int”
-D:\C\vs\exercise\prime_number\getchar.c(405,9): message : 请考虑在格式字符串中使用“%d”
-D:\C\vs\exercise\prime_number\getchar.c(405,9): message : 请考虑在格式字符串中使用“%I32d”
-D:\C\vs\exercise\prime_number\getchar.c(80): warning C4716: “mainCFTVGBHJ”: 必须返回一个值
-D:\C\vs\exercise\prime_number\getchar.c(401): warning C4716: “mainYGUF”: 必须返回一个值
+D:\C\vs\exercise\prime_number\getchar.c(209,34): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+D:\C\vs\exercise\prime_number\getchar.c(260,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C\vs\exercise\prime_number\getchar.c(277,18): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\C\vs\exercise\prime_number\getchar.c(302,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C\vs\exercise\prime_number\getchar.c(327,17): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\C\vs\exercise\prime_number\getchar.c(356,31): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C\vs\exercise\prime_number\getchar.c(440,44): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C\vs\exercise\prime_number\getchar.c(453,33): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
   prime_number.vcxproj -> D:\C\vs\exercise\prime_number\x64\Debug\prime_number.exe

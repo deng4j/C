@@ -77,6 +77,8 @@ int mainCFTVGBHJ() {
 	printf("请输入:\n");
 	scanf("%[^\n]", a); //输入换行键才结束
 	printf("str:%s",a);
+
+	return 0;
 }
 
 //除法+取模，获取数字
@@ -398,4 +400,252 @@ int mainYGUF() {
 	m = a > b ? a : b;
 	n = c / m;
 	printf("最小公倍数：%lld 最大公约数：%lld", n,m);
+
+	return 0;
+}
+
+//将数字的每个位替换
+int main12UHU() {
+	int n,m=0,k,h;
+	printf("请输入:\n");
+	scanf("%d", &n);
+
+	for ( k = 1; n !=0; k=k*10)
+	{
+		//获取n的个位
+		h = n % 10;
+		int temp = 0;
+		if (h % 2 == 0) {
+			temp = 0;
+		}
+		else
+		{
+			temp = 1;
+		}
+		m += temp * k;
+
+		n /= 10;
+	}
+
+	printf("%d", m);
+	return 0;
+}
+
+
+int mainGY() {
+	float a,b,c,d;
+	printf("请输入:\n");
+	scanf("%f %f %f %f", &a,&b,&c,&d);
+
+	float total = 0.2 * a + 0.1 * b + 0.2 * c + 0.5 * d;
+
+	printf("%.1f", total);
+	return 0;
+}
+
+//求两点距离的平方
+int mainYFUYV() {
+	int a, b, c, d;
+	printf("请输入:\n");
+	scanf("%d %d", &a, &b);
+	scanf("%d %d", &c, &d);
+
+	int distance = pow((c - a), 2) + pow((d - b), 2);
+
+	printf("%d", distance);
+	return 0;
+}
+
+
+int mainYGU() {
+	int a, b;
+	printf("请输入:\n");
+	scanf("%d %d", &a, &b);
+
+	if (a>100)
+	{
+		a %= 100;
+	}
+	if (b > 100)
+	{
+		b %= 100;
+	}
+	int sum = a + b;
+	if (sum >= 100)
+	{
+		sum %= 100;
+	}
+
+	printf("%d", sum);
+	return 0;
+}
+
+int mainYUG() {
+	int a;
+	printf("请输入:\n");
+	scanf("%d", &a);
+
+	if (a >=140)
+	{
+		printf("%s", "Genius");
+	}
+	return 0;
+}
+
+int mainGUYU() {
+	int a;
+	printf("请输入:\n");
+	
+	while (~scanf("%d", &a))
+	{
+		if (a >= 60)
+		{
+			printf("%s\n", "Pass");
+		}
+		else
+		{
+			printf("%s\n", "Fail");
+		}
+	}
+
+	return 0;
+}
+
+//判断奇偶数
+int mainGYUB() {
+	int a;
+	printf("请输入:\n");
+
+	while (~scanf("%d", &a))
+	{
+		if (a % 2 == 0)
+		{
+			printf("%s\n", "Even");
+		}
+		else
+		{
+			printf("%s\n", "Odd");
+		}
+	}
+
+	return 0;
+}
+
+//判断是否是元音
+int mainYUFI() {
+	char a;
+	printf("请输入:\n");
+	char v[] = "AaEeIiOoUu";
+
+	while (~scanf("%s", &a))
+	{
+		for (int i = 0; i < strlen(v); i++)
+		{
+			if (a==v[i])
+			{
+				printf("%s\n", "Vowel");
+				break;
+			}
+
+			if (i==strlen(v)-1)
+			{
+				printf("%s\n", "Consonant");
+			}
+		}
+	}
+
+	return 0;
+}
+
+int mainILBI() {
+	int a, b, c;
+	printf("请输入:\n");
+	scanf("%d %d %d", &a, &b,&c);
+
+	if (a>=b && a<=c)
+	{
+		printf("%s\n","true");
+	}
+	else
+	{
+		printf("%s\n", "false");
+	}
+
+	return 0;
+}
+
+//判断平年闰年
+int mainUGU() {
+	int a;
+	printf("请输入:\n");
+	scanf("%d", &a);
+
+	int flag = a % 100 == 0 ? 1 : 0;
+	if (flag)
+	{
+		flag = a % 400==0?1:0;
+	}
+	else
+	{
+		flag = a % 4 == 0 ? 1 : 0;
+	}
+	if (flag)
+	{
+		printf("%s\n", "true");
+	}
+	else
+	{
+		printf("%s\n", "false");
+	}
+
+
+
+	return 0;
+}
+
+//是否是字母（包括大小写）
+int mainYUOHG() {
+	char a;
+	printf("请输入:\n");
+	scanf("%c", &a);
+
+	if ((a>=65&&a<=90)|| (a >= 97 && a <= 122))
+	{
+		printf("%s\n", "yes");
+	}
+	else
+	{
+		printf("%s\n", "no");
+	}
+
+	return 0;
+}
+
+
+int mainGUUIGH() {
+	int a;
+	printf("请输入:\n");
+	scanf("%d", &a);
+
+	a = a % 100;
+	a = a % 12;
+
+	if (a >=3 && a <= 5)
+	{
+		printf("%s\n", "spring");
+	}
+	else if (a >= 6 && a <= 8)
+	{
+		printf("%s\n", "summer");
+	}
+	else if (a >= 9 && a <= 11)
+	{
+		printf("%s\n", "autumn");
+	}
+	else
+	{
+		printf("%s\n", "winter");
+	}
+
+	return 0;
 }
