@@ -38,6 +38,16 @@ int mainGYUVY() {
 }
 
 
+int mainCFTVGBHJ() {
+	char a[50];
+	printf("请输入:\n");
+	scanf("%[^\n]", a); //输入换行键才结束
+	printf("str:%s", a);
+
+	return 0;
+}
+
+
 int mainTFYH() {
 	char x;
 	int y;
@@ -71,15 +81,6 @@ int mainGHJG()
 	return 0;
 }
 
-
-int mainCFTVGBHJ() {
-	char a[50];
-	printf("请输入:\n");
-	scanf("%[^\n]", a); //输入换行键才结束
-	printf("str:%s",a);
-
-	return 0;
-}
 
 //除法+取模，获取数字
 int mainGUUGHIU() {
@@ -604,19 +605,23 @@ int mainUGU() {
 }
 
 //是否是字母（包括大小写）
-int mainYUOHG() {
+int mainUIHI() {
 	char a;
 	printf("请输入:\n");
-	scanf("%c", &a);
+	while (~scanf("%c", &a))
+	{
 
-	if ((a>=65&&a<=90)|| (a >= 97 && a <= 122))
-	{
-		printf("%s\n", "yes");
-	}
-	else
-	{
-		printf("%s\n", "no");
-	}
+		if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122))
+		{
+			printf("%c is an alphabet.\n", a);
+		}
+		else
+		{
+			printf("%c is not an alphabet.\n", a);
+		}
+		//清空缓冲区的\n
+		getchar();
+	} 
 
 	return 0;
 }
@@ -647,5 +652,207 @@ int mainGUUIGH() {
 		printf("%s\n", "winter");
 	}
 
+	return 0;
+}
+
+int mainYGIVGV() {
+	float a, b;
+	scanf_s("%f %f", &a, &b);
+
+	float bmi = a / pow(b,2);
+
+	if (bmi >=18.5&& bmi <=23.9)
+	{
+		printf("%s","Normal");
+	}
+	else
+	{
+		printf("%s", "Abnormal");
+	}
+
+	return 0;
+}
+
+//求最大值
+int mainIGU() {
+	int arr[4] = {0};
+
+	scanf("%d %d %d %d",arr+0, arr + 1, arr + 2, arr + 3);
+
+	int max = arr[0];
+
+	printf("数组size：%d\n",sizeof(arr)/4);
+
+	for (int i = 0; i < sizeof(arr)/sizeof(int); i++)
+	{
+		if (arr[i]>max)
+		{
+			max = arr[i];
+		}
+	}
+
+	printf("%d\n",max);
+
+	return 0;
+}
+
+
+int mainHUI12() {
+	int a;
+	scanf("%d",&a);
+
+	int arr[] = {2,3,7};
+	int flag = 1;
+
+	for (int i = 0; i < 3; i++)
+	{
+		if (a%arr[i]==0)
+		{
+			printf("%d ",arr[i]);
+			flag = 0;
+		}
+		if (flag==1&&i==2)
+		{
+			printf("n");
+		}
+	}
+}
+
+
+int mainUUUGY() {
+	int a;
+	int positive = 0;
+	int negative = 0;
+
+	for (int i = 0; i < 10; i++)
+	{
+		scanf("%d", &a);
+		if (a > 0)
+		{
+			positive += 1;
+		}
+		if (a<0)
+		{
+			negative += 1;
+		}
+	}
+
+	printf("positive:%d\n",positive);
+	printf("negative:%d\n", negative);
+}
+
+
+int mainYUUGU() {
+	float pricce;
+	int month;
+	int day;
+	int tickit;
+
+	scanf("%f %d %d %d", &pricce,&month,&day,&tickit);
+
+	if (month==day&& month== 12)
+	{
+		pricce *= 0.8;
+		if (tickit)
+		{
+			pricce -= 50;
+		}
+	}
+	else if (month == day && month == 11)
+	{
+		pricce *= 0.7;
+		if (tickit)
+		{
+			pricce -= 50;
+		}
+	}
+
+	pricce = pricce > 0 ? pricce : 0;
+
+	printf("%.2f\n", pricce);
+}
+
+
+
+
+int mainUIGI() {
+	float weight;
+	char flag;
+
+	scanf("%f %c", &weight,&flag);
+
+
+	int price = weight< 1.0 ? 20 : (20+ ceil(weight-1));
+
+	if (flag=='y')
+	{
+		price += 5;
+	}
+
+	printf("%d\n", price);
+
+}
+
+
+int mainBUI() {
+	float price;
+
+	scanf("%f", &price);
+
+	if (price >=5000)
+	{
+		price *= 0.6;
+	}
+	else if (price>=2000)
+	{
+		price *= 0.7;
+	}
+	else if (price >= 500)
+	{
+		price *= 0.8;
+	}
+	else if (price >= 100)
+	{
+		price *= 0.9;
+	}
+
+	printf("%.1f\n", price);
+
+}
+
+
+
+int mainVYU121() {
+	float distance;
+
+	scanf("%f", &distance);
+
+	float plan1 = distance / 1.0;
+	float plan2 = distance / 10.0+10;
+
+	printf("%s\n", plan1<plan2?"w":"v");
+
+}
+
+
+int mainGUYPO() {
+	float x,y;
+	float x1, y1;
+
+	scanf("%f %f", &x,&y);
+	scanf("%f %f", &x1, &y1);
+
+	if (y1 - y == 1) {
+		printf("u");
+	}
+	if (y1 - y == -1) {
+		printf("d");
+	}
+	if (x1 - x == 1) {
+		printf("r");
+	}
+	if (x1 - x == -1) {
+		printf("l");
+	}
 	return 0;
 }
