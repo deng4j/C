@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="run_app.c">
+    <ClCompile Include="RAM.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="error.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

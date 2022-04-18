@@ -53,7 +53,7 @@ void dynamicallyMemory();
 */
 void err();
 
-int main() {
+int mainBUII() {
 	dynamicallyMemory();
 	err();
 }

@@ -27,6 +27,9 @@
     <ClCompile Include="conversion.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="stringArr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="getchar.h">

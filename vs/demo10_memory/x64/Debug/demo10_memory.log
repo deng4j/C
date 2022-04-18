@@ -1,2 +1,5 @@
-﻿  run_app.c
+﻿  error.c
+  RAM.c
+  正在生成代码...
+D:\C\vs\demo10_memory\RAM.c(59): warning C4716: “mainBUII”: 必须返回一个值
   demo10_memory.vcxproj -> D:\C\vs\demo10_memory\x64\Debug\demo10_memory.exe

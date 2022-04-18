@@ -142,6 +142,7 @@
     <ClCompile Include="conversion.cpp" />
     <ClCompile Include="getchar.c" />
     <ClCompile Include="prime.cpp" />
+    <ClCompile Include="stringArr.c" />
     <ClCompile Include="while.cpp" />
   </ItemGroup>
   <ItemGroup>
