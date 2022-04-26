@@ -14,6 +14,7 @@ int mainGYUVY() {
 
 	int ch = 0;
 	int temp = 0;
+	//ctrl+z停止输入
 	while ((ch=getchar()) !=EOF)
 	{
 		if (ch>=97 && ch<=122)
@@ -854,5 +855,305 @@ int mainGUYPO() {
 	if (x1 - x == -1) {
 		printf("l");
 	}
+	return 0;
+}
+
+
+int mainBJHB12() {
+	int status;
+
+	while (~scanf("%d", &status))
+	{
+
+		switch (status)
+		{
+		case 200:
+			printf("%s\n", "OK");
+			break;
+		case 202:
+			printf("%s\n", "Accepted");
+			break;
+		case 400:
+			printf("%s\n", "Bad Request");
+			break;
+		case 403:
+			printf("%s\n", "Forbidden");
+			break;
+		case 404:
+			printf("%s\n", "Not Found");
+			break;
+		case 500:
+			printf("%s\n", "Internal Server Error");
+			break;
+		case 502:
+			printf("%s\n", "Bad Gateway");
+		default:
+			break;
+		}
+	}
+
+	return 0;
+
+}
+
+
+
+int mainGUYUNM12() {
+	float price;
+
+	while (~scanf("%f", &price))
+	{
+
+		if (price >0)
+		{
+
+			printf("%d\n", 1);
+		}
+		else if (price ==0)
+		{
+			printf("%.1f\n", 0.5);
+		}
+		else if (price < 0)
+		{
+			printf("%d\n", 0);
+		}
+	}
+
+	return 0;
+}
+
+
+
+int mainGKJK12() {
+	float a,b,c;
+
+	while (~scanf("%f %f %f", &a,&b,&c))
+	{
+		if ((a+b)>c&&(a+c)>b&&(b+c)>a)
+		{
+			if (a==b&&a==c)
+			{
+				printf("%s\n", "Equilateral triangle!");
+			}
+			else if (a==b||a==c||b==c)
+			{
+				printf("%s\n", "Isosceles triangle!");
+			}
+			else
+			{
+				printf("%s\n", "Ordinary triangle!");
+			}
+		}
+		else
+		{
+			printf("%s\n", "Not a triangle!");
+		}
+	}
+
+	return 0;
+}
+
+
+
+
+
+int mainHUK12() {
+	int a, b, c;
+	int d, e, f;
+
+	scanf("%d %d %d", &a, &b, &c);
+	int startDay = a * 365 + b * 30 + c;
+
+	while (~scanf("%d %d %d", &d, &e, &f))
+	{
+		int nowDay = d * 365 + e * 30 + f;
+
+		if (nowDay>=startDay)
+		{
+			printf("%s\n", "yes");
+		}
+		else
+		{
+			printf("%s\n", "no");
+		}
+			
+	}
+
+	return 0;
+}
+
+
+
+//一元二次方程求解
+int mainGUJG() {
+	float a, b, c;
+
+	while (~scanf("%f %f %f", &a, &b, &c))
+	{
+		if (a!=0)
+		{
+			float result = b * b - 4 * a * c;
+			float ans1,ans2;
+			if (result==0)
+			{
+				ans1 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a)+0.00;
+				printf("x1=x2=%.2f\n", ans1);
+			}
+			else if (result>0)
+			{
+				ans1 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
+				ans2 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+				printf("x1=%.2f;x2=%.2f\n", ans1, ans2);
+			}
+			else
+			{
+				ans1 =-b / (2 * a);
+				ans2 = sqrt(-result) / (2 * a);
+				if (ans2<0)
+				{
+					ans2 = -ans2;
+				}
+				printf("x1=%.2f-%.2fi;x2=%.2f+%.2fi\n", ans1, ans2, ans1, ans2);
+			}
+		}
+		else
+		{
+			printf("%s\n", "Not quadratic equation");
+		}
+	}
+
+	return 0;
+}
+
+
+//计算某年的某月总共有多少天
+int mainHUI121() {
+	int a, b;
+
+	while (~scanf("%d %d", &a, &b))
+	{
+
+		int flag = 0;
+		int max;
+		if (a%4==0)
+		{
+			flag = 1;
+			if (a%100==0&&a%400!=0)
+			{
+				flag = 0;
+			}
+		}
+
+		if (b <= 7)
+		{
+			if (b % 2 != 0)
+			{
+				max = 31;
+			}
+			else
+			{
+				max = 30;
+			}
+
+		}
+		else
+		{
+			if (b % 2 != 0)
+			{
+				max = 30;
+			}
+			else
+			{
+				max = 31;
+			}
+		}
+
+		if (b==2)
+		{
+			if (flag)
+			{
+				max = 29;
+			}
+			else
+			{
+				max = 28;
+			}
+		}
+
+		printf("%d\n", max);
+	}
+
+	return 0;
+}
+
+
+
+int mainHUK78() {
+	float a, b, c;
+
+	scanf("%f %f %f", &a, &b, &c);
+	float avr = (a+b+c)/3;
+
+	if (avr>=60)
+	{
+		printf("NO");
+	}
+	else
+	{
+		printf("YES");
+	}
+
+	return 0;
+}
+
+
+//ISBN号码
+int mainH45() {
+	int a, b, c,d;
+
+	scanf("%d-%d-%d-%c", &a, &b, &c,&d);
+	int start = c+b*100000+a*100000000;
+	
+	int code;
+	int sum=0;
+	for (int i = 9; i >0 ; i--)
+	{
+		int jk = start % 10;
+		start /= 10;
+		sum += jk * i;
+	}
+	code = sum % 11;
+
+	if (code ==10)
+	{
+		if ('X' ==(char) d)
+		{
+			printf("%s\n", "Right");
+		}
+		else
+		{
+			printf("%d-%d-%d-X\n", a, b, c);
+		}
+	}
+	else
+	{
+		if (code== (char)d-'0')
+		{
+			printf("%s\n", "Right");
+		}
+		else
+		{
+			printf("%d-%d-%d-%d\n", a, b, c, code);
+		}
+		
+	}
+
+	return 0;
+}
+
+int mainUUHI454() {
+	char a = '4';
+	int b = a - '0';
+	printf("%d",b);
 	return 0;
 }
