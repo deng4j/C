@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 
-int mainHJ() {
+int mainIJ15() {
 	int a, b;
 	while (true)
 	{
@@ -11,9 +11,17 @@ int mainHJ() {
 			return 0;
 		}
 
-		for (a = 1; b % a; a++);
+		if (b==1)
+		{
+			printf("%d不是素数：\n", b);
+			continue;
+		}
 
-		if (a == b)
+		for (a = 2; b % a; a++) {
+			printf("%d\n",b%a);
+		}
+
+		if (a != b)
 		{
 			printf("%d不是素数：\n", b);
 		}

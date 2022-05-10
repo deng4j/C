@@ -139,8 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="conversion.cpp" />
-    <ClCompile Include="getchar.c" />
+    <ClCompile Include="base2.c" />
+    <ClCompile Include="conversion.c" />
+    <ClCompile Include="base1.c" />
     <ClCompile Include="prime.cpp" />
     <ClCompile Include="stringArr.c" />
     <ClCompile Include="while.cpp" />

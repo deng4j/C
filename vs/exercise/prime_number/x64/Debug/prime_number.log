@@ -1,39 +1,7 @@
-﻿  getchar.c
-D:\C\vs\exercise\prime_number\getchar.c(56,10): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
-D:\C\vs\exercise\prime_number\getchar.c(56,10): message : 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
-D:\C\vs\exercise\prime_number\getchar.c(56,10): message : 缺失的可变参数 2 为格式字符串“%c”所需
-D:\C\vs\exercise\prime_number\getchar.c(56,10): message : 此参数用作缓冲区大小
-D:\C\vs\exercise\prime_number\getchar.c(211,34): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(262,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(279,18): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(304,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(329,17): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(358,31): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(442,44): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(455,33): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(663,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(685,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
-D:\C\vs\exercise\prime_number\getchar.c(685,9): message : 请考虑在格式字符串中使用“%lld”
-D:\C\vs\exercise\prime_number\getchar.c(685,9): message : 请考虑在格式字符串中使用“%Id”
-D:\C\vs\exercise\prime_number\getchar.c(685,9): message : 请考虑在格式字符串中使用“%I64d”
-D:\C\vs\exercise\prime_number\getchar.c(756,16): warning C4305: “*=”: 从“double”到“float”截断
-D:\C\vs\exercise\prime_number\getchar.c(764,16): warning C4305: “*=”: 从“double”到“float”截断
-D:\C\vs\exercise\prime_number\getchar.c(786,26): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(805,15): warning C4305: “*=”: 从“double”到“float”截断
-D:\C\vs\exercise\prime_number\getchar.c(809,15): warning C4305: “*=”: 从“double”到“float”截断
-D:\C\vs\exercise\prime_number\getchar.c(813,15): warning C4305: “*=”: 从“double”到“float”截断
-D:\C\vs\exercise\prime_number\getchar.c(817,15): warning C4305: “*=”: 从“double”到“float”截断
-D:\C\vs\exercise\prime_number\getchar.c(831,25): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(832,31): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(999,52): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(1004,43): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(1005,43): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(1011,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C\vs\exercise\prime_number\getchar.c(1114,8): warning C4477: “scanf”: 格式字符串“%c”需要类型“char *”的参数，但可变参数 4 拥有了类型“int *”
-D:\C\vs\exercise\prime_number\getchar.c(720): warning C4716: “mainHUI12”: 必须返回一个值
-D:\C\vs\exercise\prime_number\getchar.c(774): warning C4716: “mainYUUGU”: 必须返回一个值
-D:\C\vs\exercise\prime_number\getchar.c(743): warning C4716: “mainUUUGY”: 必须返回一个值
-D:\C\vs\exercise\prime_number\getchar.c(795): warning C4716: “mainUIGI”: 必须返回一个值
-D:\C\vs\exercise\prime_number\getchar.c(822): warning C4716: “mainBUI”: 必须返回一个值
-D:\C\vs\exercise\prime_number\getchar.c(836): warning C4716: “mainVYU121”: 必须返回一个值
+﻿  base2.c
+D:\C\vs\exercise\prime_number\base2.c(436,16): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\C\vs\exercise\prime_number\base2.c(179): warning C4716: “mainHFCO54”: 必须返回一个值
+D:\C\vs\exercise\prime_number\base2.c(215): warning C4716: “mainJHCMY15”: 必须返回一个值
+D:\C\vs\exercise\prime_number\base2.c(246): warning C4716: “mainJHG18”: 必须返回一个值
+D:\C\vs\exercise\prime_number\base2.c(231): warning C4716: “mainKH5FC”: 必须返回一个值
   prime_number.vcxproj -> D:\C\vs\exercise\prime_number\x64\Debug\prime_number.exe

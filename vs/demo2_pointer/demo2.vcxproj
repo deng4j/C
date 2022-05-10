@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClCompile Include="p3.cpp" />
     <ClCompile Include="p4.cpp" />
+    <ClCompile Include="p5_func1.c" />
     <ClCompile Include="ref.cpp" />
     <ClCompile Include="p1.c" />
     <ClCompile Include="p2.c" />

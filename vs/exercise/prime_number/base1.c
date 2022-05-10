@@ -1157,3 +1157,547 @@ int mainUUHI454() {
 	printf("%d",b);
 	return 0;
 }
+
+//计算器
+int mainJIOOHIU12() {
+	double a,  c;
+	char b;
+	double result;
+
+	while (~scanf("%lf %c %lf", &a, &b, &c))
+	{
+		switch (b)
+		{
+		case '+':
+			result = a + c;
+			printf("%.4lf%c%.4lf=%.4lf\n", a, b, c, result);
+			break;
+		case '-':
+			result = a - c;
+			printf("%.4lf%c%.4lf=%.4lf\n", a, b, c, result);
+			break;
+		case '*':
+			result = a * c;
+			printf("%.4lf%c%.4lf=%.4lf\n", a, b, c, result);
+			break;
+		case '/':
+			if (c == 0)
+			{
+				printf("%s\n", "Wrong!Division by zero!");
+				break;
+			}
+			result = a / c;
+			printf("%.4lf%c%.4lf=%.4lf\n", a, b, c, result);
+			break;
+		default:
+			printf("%s\n", "Invalid operation!");
+			break;
+		}
+	}  
+	
+	return 0;
+}
+
+int mainUHUI15() {
+	int n;
+	scanf("%d",&n);
+
+	for (int i = 0; i < n; i++)
+	{
+		printf("%s\n","Happy new year!Good luck!");
+	}
+
+	return 0;
+}
+
+int mainHUI4873() {
+	long n,sum=0;
+	scanf("%ld", &n);
+
+	for (int i = 1; i <= n; i++)
+	{
+		sum += i;
+	}
+	printf("%ld\n",sum);
+
+	return 0;
+}
+
+int mainHUP4848() {
+	int n, odd = 0,even=0;
+	scanf("%d", &n);
+
+	for (int i = 1; i <= n; i++)
+	{
+		if (i%2==0)
+		{
+			even++;
+		}
+		else
+		{
+			odd++;
+		}
+	}
+	printf("%d %d\n", odd,even);
+
+	return 0;
+}
+
+
+
+int mainHU12() {
+	int sum=0;
+
+	for (int i = 100; i <= 999; i++)
+	{
+		int j;
+		for ( j= 2; i%j; j++);
+		if (j==i)
+		{
+			sum++;
+		}
+	}
+	printf("%d\n", sum);
+
+	return 0;
+}
+
+//乘法表
+int mainGU15() {
+
+	for (int i = 1; i <= 9; i++)
+	{
+		for (int j = 1; j <= i; j++)
+		{
+			printf("%d*%d=%2d ",j,i,i*j);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
+
+//求1-2+3-4+...
+int mainHU15() {
+	int n,sum=0;
+	scanf("%d", &n);
+
+	if (n%2==0)
+	{
+		sum = -n / 2;
+	}
+	else
+	{
+		sum = (-(n - 1) / 2) + n;
+	}
+
+	printf("%d\n",sum);
+
+	return 0;
+}
+
+//1+1/2+1/3+…+1/N的值
+int mainGY157() {
+	int n;
+	double sum = 0;
+	scanf("%d", &n);
+
+	for (int i = 1; i <=n; i++)
+	{
+		sum += 1.0 / i;
+	}
+
+	printf("%.6f\n", sum);
+
+	return 0;
+}
+
+//计算 1+1/（1-3）+1/（1-3+5）+...+1/(1-3+5-...((-1)^(n-1))*(2n-1))的值
+int mainGG1578() {
+
+	int n;
+	double sum = 0;
+	scanf("%d", &n);
+	int monther = 0;
+
+	for (int i = 1; i <=n; i++)
+	{
+		if (i%2==0)
+		{
+			monther += -(i*2-1) ;
+		}
+		else
+		{
+			monther += i * 2 - 1;
+		}
+		sum += 1.0 / monther;
+	}
+
+	printf("%.3f\n",sum);
+
+	return 0;
+
+}
+
+// 1+（1+2）+（1+2+3）+...+(1+2+3+...+n)
+int mainFYT84() {
+
+	int n;
+	int sum = 0;
+	int memerey = 0;
+	scanf("%d", &n);
+	int monther = 0;
+
+	for (int i = 1; i <= n; i++)
+	{
+		memerey += i;
+		sum += memerey;
+	}
+
+	printf("%d\n", sum);
+
+	return 0;
+}
+
+//求位数之和
+int mainGY87() {
+
+	int n;
+	int sum = 0;
+	scanf("%d", &n);
+
+	for (; n>0; )
+	{
+		int a = n % 10;
+		n /= 10;
+
+		sum += a;
+	}
+
+	printf("%d\n", sum);
+
+	return 0;
+}
+
+//一个正整数n，如果n为偶数，就将他变为n/2, 如果n为奇数，就将他变为乘3加1
+//不断重复这样的运算，经过有限步之后，一定可以得到1
+int main15HGp() {
+
+	int n;
+	int i = 0;
+	scanf("%d", &n);
+
+	for (; n > 1; )
+	{
+		if (n%2==0)
+		{
+			n /= 2;
+		}
+		else
+		{
+			n = n * 3 + 1;
+		}
+		i++;
+	}
+
+	printf("%d\n", i);
+
+	return 0;
+}
+
+
+//1~2019中有多少个包含数字9的数
+int mainUGF18() {
+
+	int n = 0;
+	for (int i=1 ; i <=2019; i++)
+	{
+		for (int j=i; j>0;)
+		{
+			int a = j % 10;
+			j /= 10;
+			if (a==9)
+			{
+				n++;
+				break;
+			}
+		}
+		
+	}
+
+	printf("%d\n", n);
+
+	return 0;
+}
+
+//不及格人数
+int mainHUH15() {
+
+	int n = 0;
+	int sum = 0;
+	scanf("%d",&n);
+
+	for (int i = 0; i < n; i++)
+	{
+		float a, b, c;
+		scanf("%f %f %f",&a,&b,&c);
+		if ((a+b+c)/3<60)
+		{
+			sum++;
+		}
+	}
+
+	printf("%d\n", sum);
+
+	return 0;
+}
+
+//“水仙花数”是指一个三位数，它的各位数字的立方和等于其本身
+int mainGFL157() {
+
+	int a,b;
+
+	while (~scanf("%d %d", &a, &b))
+	{
+		int sum = 0;
+		for (int i = a; i <= b; i++)
+		{
+			int q = i % 10;
+			int w = i / 10 % 10;
+			int e = i / 100;
+			if (i== (q*q*q+w*w*w+e*e*e))
+			{
+				printf("%d ", i);
+				sum++;
+			}
+		}
+		if (sum)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf("no\n");
+		}
+	}
+	return 0;
+}
+
+//变种水仙花数 - Lily Number：把任意的数字，从中间拆分成两个数字，
+//比如1461 可以拆分成（1和461）,（14和61）,（146和1),如果所有拆分后的乘积之和等于自身
+int mainHG157() {
+
+	for (int i = 10000; i <= 99999; i++)
+	{
+		int sum = 0;
+		for (int index = 10; index <= 10000; index*=10)
+		{
+			int a = i % index;
+			int b = i / index;
+			sum += a * b;
+		}
+		if (sum==i)
+		{
+			printf("%d ",i);
+		}
+		
+	}
+	return 0;
+}
+
+
+int mainJGF15() {
+
+	float max=0, min=100,sum=0;
+	int g=0;
+	float a;
+
+	while (~scanf("%f", &a))
+	{
+		sum += a;
+		g++;
+
+		if (a>max)
+		{
+			max = a;
+		}
+		if (a<min)
+		{
+			min = a;
+		}
+
+		if (g == 7)
+		{
+			printf("%.2f\n", (sum - min - max) / 5);
+			g = 0;
+			max = 0;
+			min = 100;
+			sum = 0;
+		}
+	}
+
+	return 0;
+}
+
+//反向输出四位数
+int mainHFD15() {
+
+	int n = 0;
+	scanf("%d", &n);
+
+	int a = n % 10 * 1000+ n/10%10*100+n/100%10*10+n/1000;
+
+	printf("%04d\n", a);
+
+	return 0;
+}
+
+//转6进制,由于long长度不够，只能输出10位的数
+int mainDld5() {
+
+	int n = 0;
+	long six = 0;
+	int g = 0;
+	scanf("%d", &n);
+	for (int m = 1; n > 0;m*=10)
+	{
+		int a = n%6;
+		six += a * m;
+		n /= 6;
+		if (n<6)
+		{			
+			six += n * m * 10;
+			break;
+		}
+	}
+	printf("%ld\n", six);
+
+	return 0;
+}
+
+
+//转6进制，也可以使用递归
+int mainHGF15() {
+
+	int n = 0;
+	char* p = (char*)malloc(sizeof(char)*24);
+	int index = 0;
+	scanf("%d", &n);
+	while (1)
+	{
+		int a = n % 6;
+		*(p + index) = a+'0';
+		index++;
+		n /= 6;
+		if (n<6)
+		{
+			*(p + index++) = n + '0';
+			*(p + index--) = '\0';
+			break;
+		}
+	}
+
+	for (int i = index; i >=0; i--)
+	{
+		if (i == index && *(p + index) == '0')
+		{
+			continue;
+		}
+		printf("%c", *(p + i));
+	}
+	return 0;
+}
+
+//第一天发1个金币，后两天发2个金币，再后三天发3个金币......
+//当连续N天每天收到N枚金币后，骑士会在之后的连续N+1天里，每天收到N+1枚金币
+int mainHGF57() {
+
+	int n = 0;
+	scanf("%d", &n);
+
+	int g = 0;
+	int sum = 0;
+	for (int i = 1; i <=n; i++)
+	{
+		sum += i * i;
+		
+		g+=i;
+		if (g>=n)
+		{
+			sum -= (g - n) * i;
+			break;
+		}
+	}
+
+	printf("%d\n", sum);
+
+	return 0;
+}
+
+
+//对称数
+int stack(int i) {
+	char p[6] = { NULL,NULL, NULL, NULL, NULL, NULL };
+	int index = 0;
+	for (int j = i; j > 0;)
+	{
+		int a = j % 10;
+		j /= 10;
+		if (p[index] == a + '0')
+		{
+			p[index--] = NULL;
+		}
+		else
+		{
+			p[++index] = a + '0';
+		}
+	}
+
+	if (index==0&&p[0]==NULL)
+	{
+		return -1;
+	}
+	else
+	{
+		return index;
+	}
+}
+
+int symmetry(int i) {
+	int p[6];
+	int index = -1;
+	for (int j = i; j > 0;)
+	{
+		int a = j % 10;
+		j /= 10;
+		p[++index] = a;
+	}
+	for (int start = 0; start <=index;)
+	{
+		if (p[start]!=p[index])
+		{
+			return 0;
+		}
+		start++;
+		index--;
+	}
+	return 1;
+}
+
+int mainJGFL15() {
+
+	int n = 0;
+	scanf("%d", &n);
+
+	for (int i = 1; i <= n; i++)
+	{
+		int flag = symmetry(i);
+		if (flag ==1)
+		{
+			printf("%d\n", i);
+		}
+	}
+	return 0;
+}
+
+

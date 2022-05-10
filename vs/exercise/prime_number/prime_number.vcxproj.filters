@@ -21,13 +21,16 @@
     <ClCompile Include="while.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="getchar.c">
+    <ClCompile Include="base1.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="conversion.cpp">
+    <ClCompile Include="conversion.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="stringArr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base2.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
