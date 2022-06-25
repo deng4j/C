@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="comma.cpp" />
     <ClCompile Include="d2.c" />
     <ClCompile Include="d1.c" />
     <ClCompile Include="d3.c" />

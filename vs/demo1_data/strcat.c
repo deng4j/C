@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 
-int main() {
+int mainJG455() {
 
 	char targets[100] = "ÄãºÃCÓïÑÔ";
 	char str[] = "£¬Ò»ÆğÍæ";

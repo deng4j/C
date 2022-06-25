@@ -1,13 +1,6 @@
 ﻿  base2.c
-D:\C\vs\exercise\prime_number\base2.c(438,25): warning C4554: “<<”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
-D:\C\vs\exercise\prime_number\base2.c(439,25): warning C4554: “<<”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
-D:\C\vs\exercise\prime_number\base2.c(439,40): warning C4554: “<<”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
-D:\C\vs\exercise\prime_number\base2.c(441,10): error C2057: 应输入常量表达式
-D:\C\vs\exercise\prime_number\base2.c(441,10): error C2466: 不能分配常量大小为 0 的数组
-D:\C\vs\exercise\prime_number\base2.c(441,13): error C2057: 应输入常量表达式
-D:\C\vs\exercise\prime_number\base2.c(441,13): error C2466: 不能分配常量大小为 0 的数组
-D:\C\vs\exercise\prime_number\base2.c(441,13): error C2087: “b”: 缺少下标
-D:\C\vs\exercise\prime_number\base2.c(441,14): error C2133: “b”: 未知的大小
-D:\C\vs\exercise\prime_number\base2.c(483,39): warning C4554: “<<”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
-D:\C\vs\exercise\prime_number\base2.c(486,82): warning C4554: “<<”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
-D:\C\vs\exercise\prime_number\base2.c(487,60): warning C4554: “<<”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+D:\C\vs\exercise\prime_number\base2.c(179): warning C4716: “mainHFCO54”: 必须返回一个值
+D:\C\vs\exercise\prime_number\base2.c(231): warning C4716: “mainKH5FC”: 必须返回一个值
+D:\C\vs\exercise\prime_number\base2.c(215): warning C4716: “mainJHCMY15”: 必须返回一个值
+D:\C\vs\exercise\prime_number\base2.c(246): warning C4716: “mainJHG18”: 必须返回一个值
+  prime_number.vcxproj -> D:\C\vs\exercise\prime_number\x64\Debug\prime_number.exe
